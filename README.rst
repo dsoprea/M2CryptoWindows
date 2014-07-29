@@ -57,21 +57,21 @@ For more info see: `openssl-1.0.1e\\INSTALL.W32` or `openssl-1.0.1e\\INSTALL.W64
 
 To create a 32-bit build run the following commands from the *Visual Studio* command prompt::
 
-    set PATH=%PATH%;C:\\Program Files\\nasm
-    cd C:\\grr-build\\openssl-1.0.1e
-    perl Configure VC-WIN32 --prefix=C:\\grr-build\\openssl
-    ms\\do_nsam.bat
-    nmake -f ms\\ntdll.mak
-    nmake -f ms\\ntdll.mak install
+    set PATH=%PATH%;C:\Program Files\nasm
+    cd C:\grr-build\openssl-1.0.1e
+    perl Configure VC-WIN32 --prefix=C:\grr-build\openssl
+    ms\do_nsam.bat
+    nmake -f ms\ntdll.mak
+    nmake -f ms\ntdll.mak install
 
 To create a 64-bit build run the following commands from the *Visual Studio* command prompt::
 
-    set PATH=%PATH%;C:\\Program Files\\nasm
-    cd C:\\grr-build\\openssl-1.0.1e
-    perl Configure VC-WIN64A --prefix=C:\\grr-build\\openssl
-    ms\\do_win64a.bat
-    nmake -f ms\\ntdll.mak
-    nmake -f ms\\ntdll.mak install
+    set PATH=%PATH%;C:\Program Files\nasm
+    cd C:\grr-build\openssl-1.0.1e
+    perl Configure VC-WIN64A --prefix=C:\grr-build\openssl
+    ms\do_win64a.bat
+    nmake -f ms\ntdll.mak
+    nmake -f ms\ntdll.mak install
 
 Note that a `\\` at the end of the prefix path `--prefix=C:\\grr-build\\openssl` can cause `nmake -f ms\\ntdll.mak install` to fail.
 
@@ -90,7 +90,7 @@ Download the patch from: http://code.google.com/p/grr/downloads/detail?name=m2cr
 
 To apply the patch run the following commands::
 
-    cd C:\\grr-build\\M2Crypto-0.21.1
+    cd C:\grr-build\M2Crypto-0.21.1
     patch -u -p0 < m2crypto-fixes.patch
 
 In setup.py:
@@ -100,9 +100,9 @@ In setup.py:
 
 Build::
 
-    set PATH=%PATH%;C:\\grr-build\\swigwin-2.0.9
-    C:\\Python27\\python.exe setup.py build
-    C:\\Python27\\python.exe setup.py install
+    set PATH=%PATH%;C:\grr-build\swigwin-2.0.9
+    C:\Python27\python.exe setup.py build
+    C:\Python27\python.exe setup.py install
 
 To get M2Crypto to work for *PyInstaller*:
 
@@ -116,7 +116,7 @@ Testing
 
 You may have issues with getting M2Crypto to run. Test by running::
 
-    C:\\python27\\python.exe -c "import M2Crypto"
+    C:\python27\python.exe -c "import M2Crypto"
 
 I get the error::
 
