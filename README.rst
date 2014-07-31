@@ -2,19 +2,30 @@
 Prebuilt Binaries
 -----------------
 
-Windows binaries for M2Crypto SSL Python library, courtesy of the `grr <https://code.google.com/p/grr/wiki/BuildingWindowsClient#M2Crypto>`_ project.
+Windows binaries for M2Crypto SSL Python library, courtesy of the 
+`grr <https://code.google.com/p/grr/wiki/BuildingWindowsClient#M2Crypto>`_ 
+project.
 
 They're reproduced here, to improve availability.
 
 - `Python 2.7 64-Bit <M2Crypto-0.21.1-openssl-1.0.1c-py2.7-win-amd64.zip?raw=true>`_
 - `Python 2.7 32-Bit <M2Crypto-0.21.1-openssl-1.0.1e-py2.7-win32.zip?raw=true>`_
 
+These archives need to be installed by hand. They are not installable using the 
+standard Python Setuptools support. I have taken the liberty of doing this, and 
+making the installable packages available via PyPI by the names given:
+
+- `M2CryptoWin32 <https://github.com/dsoprea/M2CryptoWin32>`_
+- `M2CryptoWin64 <https://github.com/dsoprea/M2CryptoWin64>`_
+
 
 -----------------------------
 Building M2Crypto From Source
 -----------------------------
 
-In the event that you want or need to build *M2Crypto* from source, the directions below were those that appeared at the *grr* page above at the time of this writing, for your reference. They have been updated for Markdown.
+In the event that you want or need to build *M2Crypto* from source, the 
+directions below were those that appeared at the *grr* page above at the time 
+of this writing, for your reference. They have been updated for Markdown.
 
 
 Instructions from the grr Project
